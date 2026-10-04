@@ -1,0 +1,58 @@
+
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700&display=swap');
+
+/* Design variables */
+:root {
+  /* Colors */
+  --color-obsidian: #0C0D0E;
+  --color-graphite: #1A1B1D;
+  --color-blood-red: #701017;
+  --color-crimson: #A31D24;
+  --color-vanilla-gray: #D8D7D0;
+  --color-steel-gray: #858587;
+
+  /* Typography */
+  --font-heading: 'Instrument Serif', serif;
+  --font-body: 'Manrope', sans-serif;
+
+  /* Spacing */
+  --page-padding: clamp(1.25rem, 5vw, 5rem);
+}
+
+/* Global reset */
+* {
+  box-sizing: border-box;
+}
+
+/* Base document */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Global body styles */
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: var(--color-obsidian);
+  color: var(--color-vanilla-gray);
+  font-family: var(--font-body);
+  line-height: 1.6;
+}
+
+/* React root */
+#root {
+  min-height: 100vh;
+}
+
+/* Shared page container */
+.page-container {
+  width: 100%;
+  padding-inline: var(--page-padding);
+}
+
+/* Global link defaults */
+a {
+  color: inherit;
+}
